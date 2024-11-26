@@ -35,40 +35,40 @@
     <button class="btn btn-primary me-2" onclick="alterarIdade()">Alterar Idade</button>
 
     <script>
-        function alterarNome() {
-            const novoNome = prompt("Digite o novo nome:");
-            if (novoNome) {
-                document.getElementById("profileName").textContent = "Nome: " + novoNome;
+        function alterarNome() { //Função para alterar o nome
+            const novoNome = prompt("Digite o novo nome:"); //pede um novo nome pelo prompt
+            if (novoNome) { //verifica se tem a guama iformação no novoNome
+                document.getElementById("profileName").textContent = "Nome: " + novoNome; //altera conteudo o profileName com "Nome: " +novoNome
             }
         }
 
-        function adicionarHobby() {
-            const novoHobby = prompt("Digite um novo hobby:");
-            if (novoHobby) {
-                const li = document.createElement("li");
-                li.textContent = novoHobby;
-                li.className = "list-group-item";
-                document.getElementById("hobbiesList").appendChild(li);
+        function adicionarHobby() { // Função para adisionar um Hobby
+            const novoHobby = prompt("Digite um novo hobby:"); //pede um novo hobby pelo prompt
+            if (novoHobby) {  //verifaiva se tem aguma coisa dentor de novoHobby
+                const li = document.createElement("li"); //cria uma constante de tipo li
+                li.textContent = novoHobby; //li resebe novoHobby
+                li.className = "list-group-item"; //da a clase list-group-item para li
+                document.getElementById("hobbiesList").appendChild(li); //coloca o li dentro da lista de hobby
             }
         }
 
-        function mudarCorDeFundo() {
-            const cores = ["#f8d7da", "#d1ecf1", "#d4edda", "#fff3cd", "#cce5ff"];
-            const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
-            document.getElementById("profileCard").style.backgroundColor = corAleatoria;
+        function mudarCorDeFundo() { //função mudar cor de fundo
+            const cores = ["#f8d7da", "#d1ecf1", "#d4edda", "#fff3cd", "#cce5ff"]; //cria um constante cor que resebe as cores em xesadecimal 
+            const corAleatoria = cores[Math.floor(Math.random() * cores.length)]; //cria uma constante corAleatorio que resebe um calculo para fazer uma nova cor 
+            document.getElementById("profileCard").style.backgroundColor = corAleatoria; //define a cor do background como a variavel corAleatoria
         }
 
-        function alterarFoto() {
-            const novaFoto = prompt("Coloque o link da nova imagem:");
-            if (novaFoto) {
-                document.getElementById("profileFoto").src = novaFoto;
+        function alterarFoto() { //função alterar foto
+            const novaFoto = prompt("Coloque o link da nova imagem:"); //pede para o usuari colocar o link da imagem pelo prompt
+            if (novaFoto) { //verifica se a algo dentro do variavel novaFoto
+                document.getElementById("profileFoto").src = novaFoto; //altera a imagem para a imagem dentro da variavel novaFoto
             }
         }
 
-        function alterarIdade() {
-            const novaIdade = prompt("Digite o nova Idade:");
-            if (novaIdade) {
-                document.getElementById("profileAge").textContent = "Idade: " + novaIdade;
+        function alterarIdade() { //função alterar idade
+            const novaIdade = prompt("Digite o nova Idade:"); //pede para o usuario colocar a nova idade pelo prompt
+            if (novaIdade) { //verifaca se a algo dentro da variavel novaIdade
+                document.getElementById("profileAge").textContent = "Idade: " + novaIdade; //altera conteudo o profileAge com "Idade: " +novaIdade
             }
         }
 
@@ -77,3 +77,4 @@
 </body>
 
 </html>
+
